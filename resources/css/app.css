@@ -1,0 +1,25 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+a {
+    text-decoration: none;
+    @apply text-teal-500;
+}
+a:hover {
+    text-decoration: underline;
+}
+.top-nav-item {
+    @apply .text-gray-900 .text-sm .font-semibold .pb-6 .border-b-2 .border-solid .border-transparent;
+}
+
+.top-nav-item:hover {
+    text-decoration: none;
+    @apply .text-teal-600 .border-teal-600;
+}
+
+.hero {
+    @apply .bg-gradient-to-r .to-teal-400 .from-blue-500;
+}
