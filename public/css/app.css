@@ -21779,46 +21779,6 @@ video {
           animation: bounce 1s infinite;
 }
 
-a {
-  text-decoration: none;
-  --text-opacity: 1;
-  color: #38b2ac;
-  color: rgba(56, 178, 172, var(--text-opacity));
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.top-nav-item {
-  --text-opacity: 1;
-  color: #1a202c;
-  color: rgba(26, 32, 44, var(--text-opacity));
-  font-size: .875rem;
-  font-weight: 600;
-  padding-bottom: 1.5rem;
-  border-bottom-width: 2px;
-  border-style: solid;
-  border-color: transparent;
-}
-
-.top-nav-item:hover {
-  text-decoration: none;
-  --text-opacity: 1;
-  color: #319795;
-  color: rgba(49, 151, 149, var(--text-opacity));
-  --border-opacity: 1;
-  border-color: #319795;
-  border-color: rgba(49, 151, 149, var(--border-opacity));
-}
-
-.hero {
-  background-image: linear-gradient(to right, var(--gradient-color-stops));
-  --gradient-to-color: #4fd1c5;
-  --gradient-from-color: #4299e1;
-  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(66, 153, 225, 0));
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -106334,3 +106294,4 @@ a:hover {
             animation: bounce 1s infinite;
   }
 }
+

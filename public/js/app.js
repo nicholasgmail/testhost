@@ -19334,6 +19334,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/css/youtube.css":
+/*!***********************************!*\
+  !*** ./resources/css/youtube.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -19378,14 +19389,15 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
-  \***********************************************************/
+/*!***************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/css/app.css ./resources/css/youtube.css ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! f:\OSPanel\domains\laravel-vue\hosttest\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! f:\OSPanel\domains\laravel-vue\hosttest\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! F:\OSPanel\domains\laravel-vue\hosttest\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! F:\OSPanel\domains\laravel-vue\hosttest\resources\css\app.css */"./resources/css/app.css");
+module.exports = __webpack_require__(/*! F:\OSPanel\domains\laravel-vue\hosttest\resources\css\youtube.css */"./resources/css/youtube.css");
 
 
 /***/ })
