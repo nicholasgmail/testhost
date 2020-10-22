@@ -58,52 +58,34 @@
     <div class="container mx-auto px-4 py-16">
         <h2 class="text-4xl font-semibold">Cast</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-16">
-            <div class="mt-8">
-                <a href="#"><img src="https://tailwindcss.com/img/card-left.jpg" class="hover:opacity-75 transition ease-in-out duration-150" alt="card"></a>
+            @foreach($movie['credits']['cast'] as $cast )
+            @if($loop -> index < 5) <div class="mt-8">
+                <a href="#"><img src="{{'https://image.tmdb.org/t/p/w500/' . $cast['profile_path']}}" class="hover:opacity-75 transition ease-in-out duration-150" alt="card"></a>
                 <div class="mt-2">
-                    <a href="#" class="text-lg mt-2 hover:text-gray-300">Real Name</a>
+                    <a href="#" class="text-lg mt-2 hover:text-gray-300">{{$cast['name']}}</a>
                     <div class="text-gray-400 text-sm">
-                        John Smith
+                        {{$cast['character']}}
                     </div>
                 </div>
-            </div>
-            <div class="mt-8">
-                <a href="#"><img src="https://tailwindcss.com/img/card-left.jpg" class="hover:opacity-75 transition ease-in-out duration-150" alt="card"></a>
-                <div class="mt-2">
-                    <a href="#" class="text-lg mt-2 hover:text-gray-300">Real Name</a>
-                    <div class="text-gray-400 text-sm">
-                        John Smith
-                    </div>
-                </div>
-            </div>
-            <div class="mt-8">
-                <a href="#"><img src="https://tailwindcss.com/img/card-left.jpg" class="hover:opacity-75 transition ease-in-out duration-150" alt="card"></a>
-                <div class="mt-2">
-                    <a href="#" class="text-lg mt-2 hover:text-gray-300">Real Name</a>
-                    <div class="text-gray-400 text-sm">
-                        John Smith
-                    </div>
-                </div>
-            </div>
-            <div class="mt-8">
-                <a href="#"><img src="https://tailwindcss.com/img/card-left.jpg" class="hover:opacity-75 transition ease-in-out duration-150" alt="card"></a>
-                <div class="mt-2">
-                    <a href="#" class="text-lg mt-2 hover:text-gray-300">Real Name</a>
-                    <div class="text-gray-400 text-sm">
-                        John Smith
-                    </div>
-                </div>
-            </div>
-            <div class="mt-8">
-                <a href="#"><img src="https://tailwindcss.com/img/card-left.jpg" class="hover:opacity-75 transition ease-in-out duration-150" alt="card"></a>
-                <div class="mt-2">
-                    <a href="#" class="text-lg mt-2 hover:text-gray-300">Real Name</a>
-                    <div class="text-gray-400 text-sm">
-                        John Smith
-                    </div>
-                </div>
-            </div>
         </div>
+        @endif
+        @endforeach
     </div>
+</div>
+</div> <!-- !end movie-cast -->
+<div class="movie-images">
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-semibold">Images</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            @foreach($movie['images']['backdrops'] as $image )
+            @if ($loop->index < 9) <div class="mt-8">
+                <a href="#">
+                    <img src="{{'https://image.tmdb.org/t/p/w500/' . $image['file_path']}}" alt="">
+                </a>
+        </div>
+        @endif
+        @endforeach
+    </div>
+</div>
 </div>
 @endsection
